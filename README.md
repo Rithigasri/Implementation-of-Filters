@@ -1,46 +1,60 @@
-# Implementation-of-Filters
-## Aim:
+# EXPERIMENT 06:IMPLEMENTATION OF FILTERS
+## AIM:
 To implement filters for smoothing and sharpening the images in the spatial domain.
 
-## Software Required:
+## SOFTWARE REQUIRED:
 Anaconda - Python 3.7
 
-## Algorithm:
-### Step1
-</br>
-</br> 
-
-### Step2
-</br>
-</br> 
-
-### Step3
-</br>
-</br> 
-
-### Step4
-</br>
-</br> 
-
-### Step5
-</br>
-</br> 
-
-## Program:
-### Developed By   :
-### Register Number:
-</br>
-
-### 1. Smoothing Filters
-
-i) Using Averaging Filter
-```Python
+## ALGORITHM:
+### Step 1:
+Import the necessary modules and read the image.
+### Step 2:
+Perform linear filtering operation.
+### Step 3:
+Apply following filters to the image for smoothing:
+* Averaging filter
+* Weighted Averaging Filter
+* Gaussian Blur
+* Median filter
+### Step 4
+Apply following filters to the image for sharpening:
+* Laplacian kernel
+* Laplacian operator
+### Step 5: 
+Display the image after applying filters.
 
 
-
-
+## PROGRAM:
 ```
-ii) Using Weighted Averaging Filter
+Developed By   : RITHIGA SRI.B
+Register Number: 212221230083
+````
+### Importing libraries:
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+```
+### Smoothing Filters
+
+(i) Using Averaging Filter:
+```
+img1=cv2.imread('monument.jpg')
+img2=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
+kernel=np.ones((11,11),np.float32)/121
+img3=cv2.filter2D(img2,-1,kernel)
+plt.figure(figsize=(9,9))
+plt.subplot(1,2,1)
+plt.imshow(img2)
+plt.title('Original')
+plt.axis('Off')
+plt.subplot(1,2,2)
+plt.imshow(img3)
+plt.title("Filtered")
+plt.axis("Off")
+```
+
+(ii) Using Weighted Averaging Filter:
 ```Python
 
 
@@ -66,7 +80,7 @@ iv) Using Median Filter
 
 ```
 
-### 2. Sharpening Filters
+### Sharpening Filters
 i) Using Laplacian Kernal
 ```Python
 
