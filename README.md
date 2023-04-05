@@ -99,24 +99,24 @@ plt.axis("Off")
 ## OUTPUT:
 ### 1. Smoothing Filters:
 
-(i) Using Averaging Filter
+(i) Using Averaging Filter  
 ![image](https://user-images.githubusercontent.com/93427256/230083153-343030cf-0962-42cf-9394-514d13901922.png)
 
-(ii) Using Weighted Averaging Filter
+(ii) Using Weighted Averaging Filter  
 ![image](https://user-images.githubusercontent.com/93427256/230083346-3e8c21a6-2e45-46f2-9508-dff3e3f02910.png)
 
-(iii) Using Gaussian Filter
+(iii) Using Gaussian Filter  
 ![image](https://user-images.githubusercontent.com/93427256/230083430-5f999c9d-f180-42e7-8dd4-78c0553509df.png)
 
-(iv) Using Median Filter
+(iv) Using Median Filter  
 ![image](https://user-images.githubusercontent.com/93427256/230083548-760931cb-b28e-435a-b0e9-0837bcee9111.png)
 
 ### 2. Sharpening Filters:
-(i) Using Laplacian Kernal
+(i) Using Laplacian Kernal  
 ![image](https://user-images.githubusercontent.com/93427256/230083685-32728af5-6be5-4bde-a31b-c8b829982ef7.png)
 
 
-(ii) Using Laplacian Operator
+(ii) Using Laplacian Operator  
 ![image](https://user-images.githubusercontent.com/93427256/230083771-cca85adf-881a-4727-91dc-0a113dcced00.png)
 
 
